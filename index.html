@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Escola Virtual </title>
+</head>
+<body>
+    <h1> ESCOLA VIRTUAL </h1>
+    <h2> Formulário de pré-matrícula </h2>
+
+
+    <div class = "linha"> 
+
+    </div>
+
+    <div id = "dados"> 
+        <b>Dados Pessoais:</b>
+
+        <form class = "formulario" id = "form"> 
+
+            <label for="nome-aluno">Nome do aluno:</label>
+            <input type="text" id="nome-aluno" name="nome-aluno" required><br>
+
+            <label for="nascimento">Nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento" required max = "2019-01-01" min = "2010-01-01" ><br>
+
+            <label for="nome-mae">Nome da Mãe:</label>
+            <input type="text" id="nome-mae" name="nome-mae" required><br>
+
+            <label for="nome-pai">Nome do Pai:</label>
+            <input type="text" id="nome-pai" name="nome-pai" required><br>
+
+            <label for="telefone-ddd">Telefone: DDD</label>
+            <input type="tel" id="telefone-ddd" name="telefone-ddd" placeholder="DDD" maxlength="2" required >
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone" maxlength="9" required pattern="[0-9]{9}" required oninvalid="this.setCustomValidity('Por favor, insira um número válido de telefone (9 dígitos)')">
+            <input type="tel" id="telefone-ramal" name="telefone-ramal" placeholder="Ramal" maxlength="4"><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+                          
+    </div>
+
+    <div id = "informacoes">
+        <b>Informações de Matrícula: </b>
+
+        
+            
+            <div id="seletor"> 
+                <label for="turmas">Série:</label> <br>
+                    <select id="turmas" name="turmas" required>
+                        <option value="1">pré-escolar</option>
+                        <option value="2">fundamental I</option>
+                        <option value="3">fundamental II</option>
+                    </select>
+            </div>
+
+            <div id = "radio">
+                <label for = "turno">Turno:</label> <br>
+                <input type="radio" id="manha" name="turno" value= "manhã" required>
+                <label for="manha">Manhã</label> <br>
+                <input type="radio" id="tarde" name="turno" value="tarde" required>
+                <label for="tarde">Tarde</label>
+
+            </div>
+
+            <div id = "check">
+                <label for = "extra">Atividades extracurriculares: </label> <br>
+                <input type="checkbox" id="info">
+                <label for="info">Informática</label> <br>
+                <input type="checkbox" id="msc">
+                <label for="msc">Música</label> <br>
+                <input type="checkbox" id="blt">
+                <label for="blt">Balet</label> <br>
+                <input type="checkbox" id="pnt">
+                <label for="pnt">Pintura</label> <br>
+                <input type="checkbox" id="jd">
+                <label for="jd">Judô</label> <br>
+                <input type="checkbox" id="fut">
+                <label for="fut">Futebol</label> <br>
+
+            </div>  
+
+    </div>
+
+    <div class = "botao"> 
+        <input type="submit" value="Enviar Formulário" id="botaoEnvia" >
+    </div>
+
+    <div class = "botao"> 
+        <input type="reset" value="Limpar Campos" id="botaoEnvia" >
+    </div>
+
+    </form>
+
+<script src="code.js"> </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body{
+    text-align: center;
+}
+
+.linha{
+    border: 1px solid black;
+}
+
+#dados{
+    margin-top: 20px;
+    border: 0.5px solid black;
+
+    text-align: left; 
+}
+
+.formulario{
+    text-align: center;
+}
+
+b{
+    margin-left: 10px;
+}
+
+.formulario label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 20px;
+}
+  
+.formulario input {
+    display: inline-block;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+#telefone-ddd{
+    width: 50px;
+}
+
+#informacoes{
+    border: 0.5px solid black;
+    text-align: left; 
+}
+
+#seletor{
+    text-align: left;
+    padding-left: 10px;
+    
+}
+
+#seletor, #radio, #check {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-top: 20px
+  }
+
+.botao{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#mensagem-sucesso{
+    display: none;
+}
